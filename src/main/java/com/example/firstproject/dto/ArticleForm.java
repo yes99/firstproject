@@ -1,5 +1,7 @@
 package com.example.firstproject.dto;
 
+import com.example.firstproject.entity.Article;
+
 public class ArticleForm {
 
     private String date;
@@ -25,5 +27,9 @@ public class ArticleForm {
                 ", perform='" + perform + '\'' +
                 ", fail='" + fail + '\'' +
                 '}';
+    }
+
+    public Article toEntity() {
+        return new Article(null,date,  title, assign, perform, fail);
     }
 }
