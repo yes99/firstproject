@@ -10,6 +10,26 @@ public class ArticleForm {
     private String perform;
     private String fail;
 
+    public String getDate() {
+        return date;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAssign() {
+        return assign;
+    }
+
+    public String getPerform() {
+        return perform;
+    }
+
+    public String getFail() {
+        return fail;
+    }
+
     public ArticleForm(String date, String title, String assign, String perform, String fail) {
         this.date = date;
         this.title = title;
